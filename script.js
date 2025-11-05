@@ -25,7 +25,7 @@ btn.addEventListener("click", () => {
         icon: "question",
         showDenyButton: true,
         confirmButtonText: "Yes 💖",
-        denyButtonText: "Yes 💕",
+        denyButtonText: "Of course!💕",
         allowOutsideClick: false,
         allowEscapeKey: false,
         customClass: {
@@ -41,7 +41,7 @@ btn.addEventListener("click", () => {
 
         Swal.fire({
           title: "Yay! 🎉",
-          html: "I knew you would! You're the best! 💕",
+          html: "Haha ,I knew you would! 💕",
           icon: "success",
           confirmButtonText: "Close 💖",
           customClass: {
