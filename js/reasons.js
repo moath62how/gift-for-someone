@@ -23,8 +23,30 @@ function showReason(index) {
         title: `${reason.icon}`,
         html: `
       <div style="margin: 20px 0;">
-        <p style="font-size: 18px; line-height: 1.6; color: #283040;">
+        <p style="
+          font-size: 18px;
+          line-height: 1.6;
+          color: #283040;
+          margin-bottom: 25px;
+        ">
           ${reason.text}
+        </p>
+
+        <!-- Bottom middle quote -->
+        <p style="
+          font-size: 14px;
+          color: #1565c0;
+          font-weight: 600;
+          opacity: 0.85;
+          margin-top: 35px;
+          text-align: center;
+          border-top: 1px solid rgba(21, 101, 192, 0.2);
+          padding-top: 14px;
+          max-width: 80%;
+          margin-left: auto;
+          margin-right: auto;
+        ">
+    Honestly… it's never just one thing. It's everything about you.
         </p>
       </div>
     `,
@@ -42,16 +64,15 @@ function showReason(index) {
         }
     }).then((result) => {
         if (result.isConfirmed) {
-            // Next button - loop back to start
             currentIndex = (currentIndex + 1) % reasons.length;
             showReason(currentIndex);
         } else if (result.isDenied) {
-            // Previous button - loop to end
             currentIndex = (currentIndex - 1 + reasons.length) % reasons.length;
             showReason(currentIndex);
         }
     });
 }
+
 
 // Open reasons modal
 function openReasons() {
