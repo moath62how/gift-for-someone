@@ -20,7 +20,7 @@ function showReason(index) {
     const reason = reasons[index];
 
     Swal.fire({
-        title: `${reason.icon}`,
+        title: `why i like you <br>${reason.icon}`,
         html: `
       <div style="margin: 20px 0;">
         <p style="
