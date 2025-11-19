@@ -17,9 +17,20 @@
       <h1>For Hanona</h1>
       <p class="lead">Tap the heart to open a little surprise 🌷</p>
 
-      <button class="gift-btn" id="giftBtn" aria-expanded="false" aria-controls="revealArea">
-        <span class="gift-icon" id="giftIcon">💖</span>
-      </button>
+      <div class="buttons-row">
+        <button class="gift-btn" id="giftBtn" aria-expanded="false" aria-controls="revealArea">
+          <span class="gift-icon" id="giftIcon">💖</span>
+        </button>
+
+        <button class="gift-btn" id="sorryBtn">
+          <span class="gift-icon">🙏</span>
+        </button>
+
+        <button class="gift-btn" id="reasonsBtn">
+          <span class="gift-icon">💌</span>
+        </button>
+      </div>
+
 
       <div class="reveal" id="revealArea">
         <svg class="tulip-svg" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -43,7 +54,8 @@
   </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.7.32/sweetalert2.all.min.js"></script>
-  <script src="script.js"></script>
+  <script type="module" src="js/main.js"></script>
+
 </body>
 
 </html>
